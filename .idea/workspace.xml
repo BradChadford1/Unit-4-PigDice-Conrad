@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6fdc67c-cc74-45c9-b157-933af976e96b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.floo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.flooignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Unit-4-PigDice-Conrad.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit-4-PigDice-Conrad.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/Die.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/GamePlay.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigDice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigGUIfx.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Die.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GamePlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PigDice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PigGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PigGUIfx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit-4-PigDice-Conrad.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Unit-4-PigDice-Conrad.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/Die.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/GamePlay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigDice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigGUIfx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PigGUIfx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigGUIfx.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Die.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="374">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding>
                 <element signature="e#94#95#0" expanded="true" />
                 <element signature="e#126#127#0" expanded="true" />
@@ -75,11 +66,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PigGUIfx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="206">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,10 +105,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Die.java" />
-        <option value="$PROJECT_DIR$/src/PigGUIfx.java" />
         <option value="$PROJECT_DIR$/src/PigDice.java" />
         <option value="$PROJECT_DIR$/src/PigGUI.java" />
         <option value="$PROJECT_DIR$/src/GamePlay.java" />
+        <option value="$PROJECT_DIR$/src/PigGUIfx.java" />
       </list>
     </option>
   </component>
@@ -152,9 +146,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -168,6 +162,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="PigGUIfx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PigGUIfx" />
+      <module name="Unit-4-PigDice-Conrad" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PigGUIfx" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -179,10 +187,19 @@
       <option name="presentableId" value="Default" />
       <updated>1576201063619</updated>
     </task>
+    <task id="LOCAL-00001" summary="What it do baby">
+      <created>1576202519458</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576202519458</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22012103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -192,6 +209,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Floobits" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -212,11 +230,15 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="What it do baby" />
+    <option name="LAST_COMMIT_MESSAGE" value="What it do baby" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Die.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="374">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding>
             <element signature="e#94#95#0" expanded="true" />
             <element signature="e#126#127#0" expanded="true" />
@@ -253,13 +275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PigGUIfx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PigDice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -274,9 +289,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PigGUIfx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -294,6 +342,19 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Unit-4-PigDice-Conrad</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

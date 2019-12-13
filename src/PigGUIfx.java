@@ -20,8 +20,8 @@ import javax.swing.*;
 
 
 public class PigGUIfx extends Application {
-    GamePlay p1 = new GamePlay();
-    GamePlay p2 = new GamePlay();
+    private GamePlay p1 = new GamePlay();
+    private GamePlay p2 = new GamePlay();
 
     private Label player1;
     private Label p1d1;
