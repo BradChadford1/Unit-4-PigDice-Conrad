@@ -25,6 +25,14 @@ public class GamePlay {
         return d2.getFace();
     }
 
+    public void setSubScore(int sub) {
+        subScore = sub;
+    }
+
+    public void setTotalScore(int tot) {
+        totalScore = tot;
+    }
+
     public String d1ToString() {
         return d1.toString();
     }

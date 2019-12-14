@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6fdc67c-cc74-45c9-b157-933af976e96b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit-4-PigDice-Conrad.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Unit-4-PigDice-Conrad.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/Die.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/GamePlay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigDice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigGUIfx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/GamePlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/GamePlay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigGUIfx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigGUIfx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PigGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Turn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PigGUIfx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigGUIfx.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Die.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="85">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding>
                 <element signature="e#94#95#0" expanded="true" />
                 <element signature="e#126#127#0" expanded="true" />
@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GamePlay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="-136">
+              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding>
                 <element signature="e#251#252#0" expanded="true" />
                 <element signature="e#282#283#0" expanded="true" />
@@ -53,10 +53,12 @@
                 <element signature="e#349#350#0" expanded="true" />
                 <element signature="e#375#376#0" expanded="true" />
                 <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
                 <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
                 <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
                 <element signature="e#575#576#0" expanded="true" />
                 <element signature="e#611#612#0" expanded="true" />
                 <element signature="e#910#911#0" expanded="true" />
@@ -69,10 +71,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PigGUIfx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="346">
+              <caret line="152" column="43" selection-start-line="152" selection-start-column="42" selection-end-line="152" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5958#5959#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,10 +91,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PigGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/Turn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
+              <folding>
+                <element signature="e#77#78#0" expanded="true" />
+                <element signature="e#114#115#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#176#177#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,6 +116,7 @@
         <option value="$PROJECT_DIR$/src/Die.java" />
         <option value="$PROJECT_DIR$/src/PigDice.java" />
         <option value="$PROJECT_DIR$/src/PigGUI.java" />
+        <option value="$PROJECT_DIR$/src/Turn.java" />
         <option value="$PROJECT_DIR$/src/GamePlay.java" />
         <option value="$PROJECT_DIR$/src/PigGUIfx.java" />
       </list>
@@ -126,7 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,7 +148,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,25 +204,30 @@
       <option name="project" value="LOCAL" />
       <updated>1576202519458</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="What it do baby">
+      <created>1576203408291</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576203408291</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22012103" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18835099" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Floobits" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.049099836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -220,6 +235,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.15517241" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Floobits" order="10" weight="0.27986908" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -235,10 +252,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="What it do baby" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Turn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+          <folding>
+            <element signature="e#77#78#0" expanded="true" />
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Die.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="85">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
             <element signature="e#94#95#0" expanded="true" />
             <element signature="e#126#127#0" expanded="true" />
@@ -252,10 +282,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PigDice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GamePlay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="-136">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#282#283#0" expanded="true" />
@@ -263,10 +300,12 @@
             <element signature="e#349#350#0" expanded="true" />
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
             <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
             <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
             <element signature="e#575#576#0" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
             <element signature="e#910#911#0" expanded="true" />
@@ -275,26 +314,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PigDice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PigGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PigGUIfx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="346">
+          <caret line="152" column="43" selection-start-line="152" selection-start-column="42" selection-end-line="152" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5958#5959#0" expanded="true" />
           </folding>
         </state>
       </provider>
