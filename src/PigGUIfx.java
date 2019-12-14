@@ -81,7 +81,6 @@ public class PigGUIfx extends Application {
     VBox root = new VBox(pane1, pane2, pane3);
     Group root2 = new Group(indicator, root);
     Scene scene = new Scene(root2, 400,100);
-
     primaryStage.setTitle("Pig Dice");
     primaryStage.setScene(scene);
     primaryStage.show();
