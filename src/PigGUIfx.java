@@ -39,7 +39,7 @@ public class PigGUIfx extends Application {
 
     private Rectangle indicator;
 
-
+    private Scene scene, scene1, scene2;
 
    @Override
     public void start(Stage primaryStage) {
@@ -69,27 +69,39 @@ public class PigGUIfx extends Application {
         indicator.setFill(Color.WHITE);
         indicator.setStrokeWidth(2);
 
-    FlowPane pane1 = new FlowPane(player1, p1d1, p1d2, sub1, tot1);
-    pane1.setHgap(15);
+        Label dub1 = new Label("Player 1 Wins!");
+
+        Label dub2 = new Label("Player 2 Wins!");
+
+        FlowPane pane1 = new FlowPane(player1, p1d1, p1d2, sub1, tot1);
+        pane1.setHgap(15);
     
-    FlowPane pane2 = new FlowPane(player2, p2d1, p2d2, sub2, tot2);
-    pane2.setHgap(15);
+        FlowPane pane2 = new FlowPane(player2, p2d1, p2d2, sub2, tot2);
+        pane2.setHgap(15);
 
-    FlowPane pane3 = new FlowPane(roll, pass);
-    pane3.setHgap(35);
+        FlowPane pane3 = new FlowPane(roll, pass);
+        pane3.setHgap(35);
 
-    VBox root = new VBox(pane1, pane2, pane3);
-    Group root2 = new Group(indicator, root);
-    Scene scene = new Scene(root2, 400,100);
-    primaryStage.setTitle("Pig Dice");
-    primaryStage.setScene(scene);
-    primaryStage.show();
+        FlowPane pane4 = new FlowPane(dub1);
+
+        FlowPane pane5 = new FlowPane(dub2);
+
+        VBox root = new VBox(pane1, pane2, pane3);
+        Group root2 = new Group(indicator, root);
+        scene = new Scene(root2, 400,100);
+        scene1 = new Scene(pane4);
+        scene2 = new Scene(pane5);
+        primaryStage.setTitle("Pig Dice");
+        primaryStage.setScene(scene);
+        primaryStage.show();
 
     }
 
     private void rollEvent(ActionEvent event) {
         if (turn.isOdd()) {
             p1.rollToScore();
+            if (p1.getTotalScore() >= 100)
+//                primaryStage.setScene(scene1);
             if ((p1.getD1() == 1) && (p1.getD2() == 1)) {
                 p1.setSubScore(0);
                 p1.setTotalScore(0);
