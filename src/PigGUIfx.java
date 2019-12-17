@@ -40,7 +40,7 @@ public class PigGUIfx extends Application {
 
     private Rectangle indicator;
 
-    private Scene scene, scene1, scene2;
+    private Scene startScene, gameScene, scene1, scene2;
 
 
 
@@ -66,6 +66,7 @@ public class PigGUIfx extends Application {
         indicator.setFill(Color.WHITE);
         indicator.setStrokeWidth(2);
 
+        Button play = new Button("Play");
         Button roll = new Button("Roll");
         Button pass = new Button("Pass");
         Button playAgain1 = new Button("Play Again");
@@ -76,6 +77,7 @@ public class PigGUIfx extends Application {
         Label dub2 = new Label("Player 2 Wins!");
         dub2.setFont(Font.font(24));
 
+        TextArea instruct = new TextArea("Roll two dice to score");
         FlowPane pane1 = new FlowPane(player1, p1d1, p1d2, sub1, tot1);
         pane1.setHgap(15);
         FlowPane pane2 = new FlowPane(player2, p2d1, p2d2, sub2, tot2);
@@ -86,16 +88,16 @@ public class PigGUIfx extends Application {
         pane4.setHgap(15);
         FlowPane pane5 = new FlowPane(dub2, playAgain2);
         pane5.setHgap(15);
-        
+
         VBox root = new VBox(pane1, pane2, pane3);
         Group root2 = new Group(indicator, root);
 
-        scene = new Scene(root2, 400,100);
+        gameScene = new Scene(root2, 400,100);
         scene1 = new Scene(pane4, 400,100);
         scene2 = new Scene(pane5,400,100);
 
         primaryStage.setTitle("Pig Dice");
-        primaryStage.setScene(scene);
+        primaryStage.setScene(gameScene);
 
         roll.setOnAction(event -> rollEvent());
         pass.setOnAction(event -> passEvent(primaryStage));
@@ -218,7 +220,7 @@ public class PigGUIfx extends Application {
         tot2.setText("Total Score:  --");
         indicator.setX(0);
         indicator.setY(0);
-        stage.setScene(scene);
+        stage.setScene(gameScene);
     }
 
     public static void main(String[] args) {

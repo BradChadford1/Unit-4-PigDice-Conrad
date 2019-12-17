@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6fdc67c-cc74-45c9-b157-933af976e96b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/Die.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/Die.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Die.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PigDiceTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigDiceTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PigGUIfx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigGUIfx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Turn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +15,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="92" />
-    <option name="y" value="33" />
-    <option name="width" value="1171" />
-    <option name="height" value="655" />
   </component>
   <component name="ProjectId" id="1V5qzgfvddOSwHo4x29xVLEi37K" />
   <component name="ProjectLevelVcsManager">
