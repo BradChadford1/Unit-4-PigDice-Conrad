@@ -1,6 +1,6 @@
 public class PigDiceTester {
     public static void main(String[] args) {
-         GamePlay p1 = new GamePlay();
+        GamePlay p1 = new GamePlay();
         GamePlay p2 = new GamePlay();
 
         p1.rollToScore();

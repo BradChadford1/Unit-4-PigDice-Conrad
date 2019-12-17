@@ -10,10 +10,6 @@ public class Die {
         return face;
     }
 
-    public void setFace(int New) {
-        face = New;
-    }
-
     public void roll() {
         face = (int)(Math.random() * sides + 1);
 

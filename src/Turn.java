@@ -9,6 +9,10 @@ public class Turn {
         currentPlayerTurn++;
     }
 
+    public void setTurn(int turn) {
+        currentPlayerTurn = turn;
+    }
+
     public boolean isOdd() {
         if (currentPlayerTurn%2 == 0) {
             return false;
