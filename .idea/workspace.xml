@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fdc67c-cc74-45c9-b157-933af976e96b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigGUIfx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-PigDice-Conrad/PigGUIfx.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PigGUIfx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigGUIfx.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576351839224</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="progress">
+      <created>1576558567497</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576558567497</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -123,13 +131,18 @@
     <MESSAGE value="Roll and Pass work" />
     <MESSAGE value="Revised" />
     <MESSAGE value="bless up" />
-    <option name="LAST_COMMIT_MESSAGE" value="bless up" />
+    <MESSAGE value="progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="94" key="#Plugins" timestamp="1576554506429">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="278" y="94" key="#Plugins/0.0.1368.872@0.0.1368.872" timestamp="1576554506429" />
+    <state x="491" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1576631019159">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="491" y="152" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1576631019159" />
     <state x="537" y="325" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576554443359">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -146,22 +159,22 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="466" y="190" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1576553646753" />
-    <state width="1292" height="7" key="GridCell.Tab.0.bottom" timestamp="1576555056534">
+    <state width="1292" height="7" key="GridCell.Tab.0.bottom" timestamp="1576638443765">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1292" height="7" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1576555056534" />
-    <state width="1292" height="7" key="GridCell.Tab.0.center" timestamp="1576555056534">
+    <state width="1292" height="7" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1576638443765" />
+    <state width="1292" height="7" key="GridCell.Tab.0.center" timestamp="1576638443763">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1292" height="7" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1576555056534" />
-    <state width="1292" height="7" key="GridCell.Tab.0.left" timestamp="1576555056534">
+    <state width="1292" height="7" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1576638443763" />
+    <state width="1292" height="7" key="GridCell.Tab.0.left" timestamp="1576638443763">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1292" height="7" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1576555056534" />
-    <state width="1292" height="7" key="GridCell.Tab.0.right" timestamp="1576555056534">
+    <state width="1292" height="7" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1576638443763" />
+    <state width="1292" height="7" key="GridCell.Tab.0.right" timestamp="1576638443764">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1292" height="7" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1576555056534" />
+    <state width="1292" height="7" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1576638443764" />
     <state x="187" y="78" key="SettingsEditor" timestamp="1576554378339">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

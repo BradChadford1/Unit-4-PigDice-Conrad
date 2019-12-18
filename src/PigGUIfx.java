@@ -1,5 +1,8 @@
+import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.scene.layout.VBox;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -17,8 +20,11 @@ import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
 import javafx.scene.text.Font;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import sun.plugin2.util.ColorUtil;
 
 import javax.swing.*;
+import java.awt.*;
 
 
 public class PigGUIfx extends Application {
@@ -27,82 +33,133 @@ public class PigGUIfx extends Application {
 
     private Turn turn = new Turn();
     
-    private Label player1;
-    private Label p1d1;
-    private Label p1d2;
-    private Label sub1;
-    private Label tot1;
-    private Label player2;
-    private Label p2d1;
-    private Label p2d2;
-    private Label sub2;
-    private Label tot2;
+    private Label player1,p1d1,p1d2,sub1,tot1,player2,p2d1,p2d2,sub2,tot2;
+
+    private TextField nameOne, nameTwo;
+    private TextArea win1, win2;
 
     private Rectangle indicator;
 
-    private Scene startScene, gameScene, scene1, scene2;
+    private Scene gameScene;
+    private Scene scene1;
+    private Scene scene2;
 
+    public PigGUIfx() {
+    }
 
-
-
-   @Override
+    @Override
     public void start(Stage primaryStage) {
+        nameOne = new TextField();
+        nameOne.setPromptText("Insert player one name here");
+        nameOne.setPrefWidth(175);
+        nameOne.setEditable(true);
+        nameOne.setFocusTraversable(false);
+        nameTwo = new TextField();
+        nameTwo.setPromptText("Insert player two name here");
+        nameTwo.setPrefWidth(175);
+        nameTwo.setEditable(true);
+        nameTwo.setFocusTraversable(false);
+
+        win1 = new TextArea("Player One Wins!");
+        win1.setPrefSize(501, 201);
+        win1.setEditable(false);
+        win1.setFont(Font.font(24));
+        win1.setStyle("-fx-control-inner-background: white");
+        win2 = new TextArea("Player Two Wins!");
+        win2.setPrefSize(501, 201);
+        win2.setEditable(false);
+        win2.setFont(Font.font(24));
+        win2.setStyle("-fx-control-inner-background: white");
+
         player1 = new Label("Player One:");
         p1d1 = new Label("D1:  --");
         p1d2 = new Label("D2:  --");
-        sub1 = new Label("Subscore:  --");
+        sub1 = new Label("Sub Score:  --");
         tot1 = new Label("Total Score:  --");
 
         player2 =  new Label("Player Two:");
         p2d1 = new Label("D1:  --");
         p2d2 = new Label("D2:  --");
-        sub2 = new Label("Subscore:  --");
+        sub2 = new Label("Sub Score:  --");
         tot2 = new Label("Total Score:  --");
 
-        indicator = new Rectangle(65,18);
+        player1.setFont(Font.font(18));
+        p1d1.setFont(Font.font(18));
+        p1d2.setFont(Font.font(18));
+        sub1.setFont(Font.font(18));
+        tot1.setFont(Font.font(18));
+
+        player2.setFont(Font.font(18));
+        p2d1.setFont(Font.font(18));
+        p2d2.setFont(Font.font(18));
+        sub2.setFont(Font.font(18));
+        tot2.setFont(Font.font(18));
+
+        indicator = new Rectangle(500,50);
         indicator.setY(0);
         indicator.setX(0);
-        indicator.setStroke(Color.BLACK);
-        indicator.setFill(Color.WHITE);
-        indicator.setStrokeWidth(2);
+        indicator.setStroke(Color.LIGHTGREY);
+        indicator.setFill(Color.rgb(200,200,200, .5));
+        indicator.setStrokeWidth(1);
 
         Button play = new Button("Play");
         Button roll = new Button("Roll");
         Button pass = new Button("Pass");
         Button playAgain1 = new Button("Play Again");
+        playAgain1.setLayoutX(75);
+        playAgain1.setLayoutY(75);
         Button playAgain2 = new Button("Play Again");
-        //Image pigPic = new Image(new FinalInputStream)
-        Label dub1 = new Label("Player 1 Wins!");
-        dub1.setFont(Font.font(24));
-        Label dub2 = new Label("Player 2 Wins!");
-        dub2.setFont(Font.font(24));
+        playAgain2.setLayoutX(75);
+        playAgain2.setLayoutY(75);
+        Button nightMode = new Button("N");
+        nightMode.setLayoutX(450);
+        nightMode.setLayoutY(175);
+        Button dayMode = new Button("D");
+        dayMode.setLayoutX(475);
+        dayMode.setLayoutY(175);
 
-        TextArea instruct = new TextArea("Roll two dice to score");
+        Label instruct = new Label("Rules                                     ");
+        Label rule1 = new Label("-Click the roll button to receive 2 numbers");
+        Label rule2 = new Label("-If none are a 1, then you will add their sum to your round score");
+        Label rule3 = new Label("-If you roll a single 1, then you will score nothing for that round");
+        Label rule4 = new Label("-If you roll snake eyes, you will lose all of your total points");
+        Label rule5 = new Label("-Click pass to transfer your round score to your total score                  ");
+        Label rule6 = new Label("-First to 100 Win Points Wins!");
+        instruct.setFont(Font.font(24));
+
         FlowPane pane1 = new FlowPane(player1, p1d1, p1d2, sub1, tot1);
         pane1.setHgap(15);
         FlowPane pane2 = new FlowPane(player2, p2d1, p2d2, sub2, tot2);
         pane2.setHgap(15);
         FlowPane pane3 = new FlowPane(roll, pass);
         pane3.setHgap(35);
-        FlowPane pane4 = new FlowPane(dub1, playAgain1);
-        pane4.setHgap(15);
-        FlowPane pane5 = new FlowPane(dub2, playAgain2);
-        pane5.setHgap(15);
+        FlowPane pane4 = new FlowPane(instruct,rule1,rule2,rule3,rule4,rule5,rule6);
+        FlowPane pane5 = new FlowPane(nameOne, nameTwo);
+        pane5.setHgap(20);
 
         VBox root = new VBox(pane1, pane2, pane3);
-        Group root2 = new Group(indicator, root);
+        Group root2 = new Group(indicator, root, nightMode, dayMode);
+        VBox vRoot2 = new VBox(pane4, pane5, play);
+        Group one = new Group(win1, playAgain1);
+        Group two = new Group(win2, playAgain2);
+        gameScene = new Scene(root2, 500,200);
+        gameScene.setFill(Color.WHITE);
+        scene1 = new Scene(one, 500,200);
+        scene2 = new Scene(two,500,200);
 
-        gameScene = new Scene(root2, 400,100);
-        scene1 = new Scene(pane4, 400,100);
-        scene2 = new Scene(pane5,400,100);
+        Scene firstScene = new Scene(vRoot2, 500, 200);
 
         primaryStage.setTitle("Pig Dice");
-        primaryStage.setScene(gameScene);
+        primaryStage.setScene(firstScene);
 
         roll.setOnAction(event -> rollEvent());
         pass.setOnAction(event -> passEvent(primaryStage));
+        nightMode.setOnAction(event -> nightEvent(gameScene));
+        dayMode.setOnAction(event -> dayEvent(gameScene));
+        play.setOnAction(event -> playEvent(primaryStage));
         playAgain1.setOnAction(event -> playAgain(primaryStage));
         playAgain2.setOnAction(event -> playAgain(primaryStage));
+
         primaryStage.show();
     }
 
@@ -119,7 +176,7 @@ public class PigGUIfx extends Application {
                 tot1.setText("Total Score:  " + p1.getTotalScore());
                 turn.passTurn();
                 indicator.setX(0);
-                indicator.setY(15);
+                indicator.setY(55);
             }
             if ((p1.getD1() == 1) || (p1.getD2() == 1)) {
                 p1.setSubScore(0);
@@ -130,7 +187,7 @@ public class PigGUIfx extends Application {
                 tot1.setText("Total Score:  " + p1.getTotalScore());
                 turn.passTurn();
                 indicator.setX(0);
-                indicator.setY(15);
+                indicator.setY(55);
             }
             else {
                 p1d1.setText("D1:  " + p1.getD1());
@@ -170,7 +227,7 @@ public class PigGUIfx extends Application {
                 p2d2.setText("D2:  " + p2.getD2());
                 sub2.setText("Sub Score:  " + p2.getSubScore());
                 indicator.setX(0);
-                indicator.setY(15);
+                indicator.setY(55);
             }
         }
     }
@@ -185,7 +242,7 @@ public class PigGUIfx extends Application {
             tot1.setText("Total Score:  " + p1.getTotalScore());
             turn.passTurn();
             indicator.setX(0);
-            indicator.setY(15);
+            indicator.setY(55);
             if (p1.getTotalScore() >= 10)
                 stage.setScene(scene1);
         }
@@ -222,6 +279,67 @@ public class PigGUIfx extends Application {
         indicator.setY(0);
         stage.setScene(gameScene);
     }
+
+   private void nightEvent(Scene scene){
+        scene.setFill(Color.BLACK);
+        player1.setTextFill(Color.WHITE);
+        p1d1.setTextFill(Color.WHITE);
+        p1d2.setTextFill(Color.WHITE);
+        sub1.setTextFill(Color.WHITE);
+        tot1.setTextFill(Color.WHITE);
+
+        player2.setTextFill(Color.WHITE);
+        p2d1.setTextFill(Color.WHITE);
+        p2d2.setTextFill(Color.WHITE);
+        sub2.setTextFill(Color.WHITE);
+        tot2.setTextFill(Color.WHITE);
+
+        win1.setStyle("-fx-control-inner-background: black");
+        win2.setStyle("-fx-control-inner-background: black");
+
+        indicator.setFill(Color.BLACK);
+        indicator.setStroke(Color.WHITE);
+
+   }
+
+
+    private void dayEvent(Scene scene){
+        scene.setFill(Color.WHITE);
+
+        player1.setTextFill(Color.BLACK);
+        p1d1.setTextFill(Color.BLACK);
+        p1d2.setTextFill(Color.BLACK);
+        sub1.setTextFill(Color.BLACK);
+        tot1.setTextFill(Color.BLACK);
+
+        player2.setTextFill(Color.BLACK);
+        p2d1.setTextFill(Color.BLACK);
+        p2d2.setTextFill(Color.BLACK);
+        sub2.setTextFill(Color.BLACK);
+        tot2.setTextFill(Color.BLACK);
+
+        win1.setStyle("-fx-control-inner-background: white");
+        win2.setStyle("-fx-control-inner-background: white");
+
+        indicator.setFill(Color.LIGHTGREY);
+        indicator.setStroke(Color.rgb(200,200,200,.5));
+
+
+
+    }
+
+        private void playEvent(Stage stage){
+            stage.setScene(gameScene);
+            if (nameOne.getText().isEmpty() || nameTwo.getText().isEmpty()){
+                player1.setText("Player 1");
+                player2.setText("Player 2");
+            }
+            else {
+                player1.setText(nameOne.getText());
+                player2.setText(nameTwo.getText());
+            }
+
+        }
 
     public static void main(String[] args) {
         launch(args);
