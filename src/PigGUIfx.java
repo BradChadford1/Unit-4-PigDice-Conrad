@@ -1,30 +1,16 @@
-import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
 import javafx.application.Application;
-import javafx.event.EventHandler;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.text.Text;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TextArea;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.*;
 import javafx.scene.Group;
-import javafx.scene.shape.Circle;
 import javafx.scene.control.Button;
-import javafx.event.ActionEvent;
 import javafx.scene.text.Font;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import sun.plugin2.util.ColorUtil;
-
-import javax.swing.*;
-import java.awt.*;
 
 
 public class PigGUIfx extends Application {
@@ -112,8 +98,8 @@ public class PigGUIfx extends Application {
         playAgain2.setLayoutX(75);
         playAgain2.setLayoutY(75);
         Button nightMode = new Button("N");
-        nightMode.setLayoutX(450);
-        nightMode.setLayoutY(175);
+        nightMode.setLayoutX(475);
+        nightMode.setLayoutY(150);
         Button dayMode = new Button("D");
         dayMode.setLayoutX(475);
         dayMode.setLayoutY(175);
