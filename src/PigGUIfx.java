@@ -26,7 +26,7 @@ public class PigGUIfx extends Application {
 
     private Rectangle indicator;
 
-    private Scene gameScene;
+    private Scene gameScene, firstScene;
     private Scene scene1;
     private Scene scene2;
 
@@ -69,17 +69,17 @@ public class PigGUIfx extends Application {
         sub2 = new Label("Sub Score:  --");
         tot2 = new Label("Total Score:  --");
 
-        player1.setFont(Font.font(18));
-        p1d1.setFont(Font.font(18));
-        p1d2.setFont(Font.font(18));
-        sub1.setFont(Font.font(18));
-        tot1.setFont(Font.font(18));
+        player1.setFont(Font.font(16));
+        p1d1.setFont(Font.font(14));
+        p1d2.setFont(Font.font(14));
+        sub1.setFont(Font.font(14));
+        tot1.setFont(Font.font(16));
 
-        player2.setFont(Font.font(18));
-        p2d1.setFont(Font.font(18));
-        p2d2.setFont(Font.font(18));
-        sub2.setFont(Font.font(18));
-        tot2.setFont(Font.font(18));
+        player2.setFont(Font.font(16));
+        p2d1.setFont(Font.font(14));
+        p2d2.setFont(Font.font(14));
+        sub2.setFont(Font.font(14));
+        tot2.setFont(Font.font(16));
 
         indicator = new Rectangle(500,50);
         indicator.setY(0);
@@ -113,9 +113,9 @@ public class PigGUIfx extends Application {
         Label rule6 = new Label("-First to 100 Win Points Wins!");
         instruct.setFont(Font.font(24));
 
-        FlowPane pane1 = new FlowPane(player1, p1d1, p1d2, sub1, tot1);
+        FlowPane pane1 = new FlowPane(player1, p1d1, p1d2, sub1);
         pane1.setHgap(15);
-        FlowPane pane2 = new FlowPane(player2, p2d1, p2d2, sub2, tot2);
+        FlowPane pane2 = new FlowPane(player2, p2d1, p2d2, sub2);
         pane2.setHgap(15);
         FlowPane pane3 = new FlowPane(roll, pass);
         pane3.setHgap(35);
@@ -123,7 +123,7 @@ public class PigGUIfx extends Application {
         FlowPane pane5 = new FlowPane(nameOne, nameTwo);
         pane5.setHgap(20);
 
-        VBox root = new VBox(pane1, pane2, pane3);
+        VBox root = new VBox(pane1, tot1, pane2, tot2, pane3);
         Group root2 = new Group(indicator, root, nightMode, dayMode);
         VBox vRoot2 = new VBox(pane4, pane5, play);
         Group one = new Group(win1, playAgain1);
@@ -132,8 +132,7 @@ public class PigGUIfx extends Application {
         gameScene.setFill(Color.WHITE);
         scene1 = new Scene(one, 500,200);
         scene2 = new Scene(two,500,200);
-
-        Scene firstScene = new Scene(vRoot2, 500, 200);
+        firstScene = new Scene(vRoot2, 500, 200);
 
         primaryStage.setTitle("Pig Dice");
         primaryStage.setScene(firstScene);
@@ -229,7 +228,7 @@ public class PigGUIfx extends Application {
             turn.passTurn();
             indicator.setX(0);
             indicator.setY(55);
-            if (p1.getTotalScore() >= 10)
+            if (p1.getTotalScore() >= 100)
                 stage.setScene(scene1);
         }
         else {
@@ -242,7 +241,7 @@ public class PigGUIfx extends Application {
             turn.passTurn();
             indicator.setX(0);
             indicator.setY(0);
-            if (p2.getTotalScore() >= 10)
+            if (p2.getTotalScore() >= 100)
                 stage.setScene(scene2);
         }
     }
@@ -263,7 +262,9 @@ public class PigGUIfx extends Application {
         tot2.setText("Total Score:  --");
         indicator.setX(0);
         indicator.setY(0);
-        stage.setScene(gameScene);
+        nameOne.setText("");
+        nameTwo.setText("");
+        stage.setScene(firstScene);
     }
 
    private void nightEvent(Scene scene){
