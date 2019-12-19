@@ -20,9 +20,6 @@ public class Die {
     }
 
     public boolean isOne() {
-        if (face == 1)
-            return true;
-        else
-            return false;
+        return face == 1;
     }
 }

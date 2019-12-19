@@ -242,7 +242,7 @@ public class PigGUIfx extends Application {
             turn.passTurn();
             indicator.setX(0);
             indicator.setY(55);
-            if (p1.getTotalScore() >= 10)
+            if (p1.getTotalScore() >= 100)
                 stage.setScene(scene1);
         }
         else {
@@ -255,7 +255,7 @@ public class PigGUIfx extends Application {
             turn.passTurn();
             indicator.setX(0);
             indicator.setY(0);
-            if (p2.getTotalScore() >= 10)
+            if (p2.getTotalScore() >= 100)
                 stage.setScene(scene2);
         }
     }

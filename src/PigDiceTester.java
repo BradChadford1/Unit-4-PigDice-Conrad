@@ -8,7 +8,7 @@ public class PigDiceTester {
         System.out.println(p1.d1ToString() + " and " + p1.d2ToString());
         System.out.println(p1.getSubScore() + " and " + p1.getTotalScore());
 
-        p1.rollToScore();
+        p2.rollToScore();
         System.out.println(p1.d1ToString() + " and " + p1.d2ToString());
         p1.pass();
         System.out.println(p1.getTotalScore());

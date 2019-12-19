@@ -14,11 +14,6 @@ public class Turn {
     }
 
     public boolean isOdd() {
-        if (currentPlayerTurn%2 == 0) {
-            return false;
-        }
-        else {
-            return true;
-        }
+        return currentPlayerTurn % 2 != 0;
     }
 }
